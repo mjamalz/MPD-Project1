@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: MPD Champs Page
+name: AutoUpdate
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -30,6 +30,6 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
     - name: Deploying using surge
-      run:  surge ./mpd-proj.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
+      run:  surge ./mpd-proj2020.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
         
     
