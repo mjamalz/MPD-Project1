@@ -29,6 +29,6 @@ jobs:
     - name: Install surge
       run: npm install -g surge
     - name: Run surge
-      run: surge ./mpd-proj.surge.sh --token ${{secrets-surge_token}}
+      run: surge ./mpd-proj.surge.sh --token ${{secrets-SURGE_TOKEN}}
      
        
