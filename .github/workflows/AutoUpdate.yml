@@ -30,6 +30,6 @@ jobs:
     - name: Installing surge
       run: sudo npm install -g surge
     - name: Deploying using surge
-      run:  surge . /mpd-proj2020.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
+      run:  surge ./ mpd-proj2020.surge.sh --token ${{secrets.SURGE_TOKEN}}   
         
     
